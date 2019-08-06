@@ -1,33 +1,20 @@
 import React from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-
+import Navbar from './partials/navbar';
+import Main from './components/main';
+import { Layout, Content } from 'react-mdl';
 
 function App() {
   return (
     <div>
     <div className="demo-big-content">
       <Layout>
-          <Header title="Title" scroll>
-              <Navigation>
-                  <a href="/">Link</a>
-                  <a href="/">Link</a>
-                  <a href="/">Link</a>
-                  <a href="/">Link</a>
-              </Navigation>
-          </Header>
-          <Drawer title="Title">
-              <Navigation>
-                  <a href="/">Link</a>
-                  <a href="/">Link</a>
-                  <a href="/">Link</a>
-                  <a href="/">Link</a>
-              </Navigation>
-          </Drawer>
+        <Navbar />
           <Content>
               <div className="page-content" />
+              <Main />
           </Content>
-      </Layout>
+        </Layout>
     </div>
     </div>
   );
