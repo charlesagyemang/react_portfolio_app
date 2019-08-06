@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Navbar from './partials/navbar';
-import Main from './components/main';
+import Navbar from './components/navbar';
+import Main from './pages/routes';
 import { Layout, Content } from 'react-mdl';
 
 function App() {
